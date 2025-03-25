@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exemplo 8</title>
+    <style>
+        h1{border: 3px groove    rgb(30,188,253);}
+    </style>
+</head>
+<body>
+    <h1>classe Container</h1>
+    <p>Um widget utilitário que combina recursos comuns de pintura, posicionamento e dimensionamento.</p>
+    <p>Um Container primeiro envolve seu child com padding (inflado por qualquer borda presente na decoração) e então aplica restrições adicionais a essa extensão preenchida (incorporando width e height como restrições, se alguma delas for diferente de zero). O contêiner é então cercado por um espaço vazio adicional descrito por margin.</p>
+    <p>Durante a pintura, o Container primeiro aplica a transform fornecida, depois pinta a decoração para preencher a extensão com preenchimento. Em seguida, ele pinta o child e, por último, pinta a foregroundDecoration, também preenchendo a extensão com preenchimento.</p>
+    <p>Containers sem child tentam ser o  maior possível, a menos que as restrições recebidas sejam ilimitadas, caso em que tentam ser o  menor possível. Contêineres com filhos se dimensionam de acordo com o tamanho dos filhos. Os argumentos de  width,  height e  restrições no construtor substituem esse comportamento padrão.</p>
+    <p>Por padrão, Containers retornam false para todos os testes de toque (hit tests). Se a propriedade color for especificada, o teste de toque é tratado por ColoredBox, que sempre retorna true. Se as propriedades decoration ou foregroundDecoration forem especificadas, o teste de toque é tratado por Decoration.hitTest.</p>
+</body>
+</html>  
